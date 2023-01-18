@@ -14,9 +14,21 @@ window.onscroll = function() {
         let top = elements[i].getBoundingClientRect().top;
         if (top < (window.innerHeight*0.6)) {
             elements[i].classList.replace('fade-section-out', 'fade-section-in');
+            if (elements[i].classList.contains('skills')) {
+                let barElements = document.getElementsByClassName("progressBarCol");
+                for (let j = 0; j < barElements.length; j++) {
+                    let newWidth = "width:" + barElements[j].getAttribute("aria-valuenow") + "%";
+                    barElements[j].setAttribute("style", newWidth);
+                }
+            }
         } else {
             elements[i].classList.replace('fade-section-in', 'fade-section-out');
-            // elements[i].classList.remove('visible');
+            if (elements[i].classList.contains('skills')) {
+                let barElements = document.getElementsByClassName("progressBarCol");
+                for (let j = 0; j < barElements.length; j++) {
+                    barElements[j].setAttribute("style", "width: 0");
+                }
+            }
         }
     }
 }

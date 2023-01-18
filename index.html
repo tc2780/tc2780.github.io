@@ -51,11 +51,11 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                <div class="hero_title"><h2 class="">HELLO</h2></div>
-                <div class="hero_desc"><p class="">...and welcome to my site!<br>
-                    I'm Tracy, currently a UBC student in my 3rd year of CS.<br>
-                    This page will hold a bit of info on my skills, past and current projects,
-                    and how you can contact me <br>(UPDATE LATER)</p></div>
+                <div class="hero_title"><p class="">hello</p></div>
+                <div class="hero_desc"><p class="">and welcome to my site!<br>
+                    I'm Tracy, a UBC student in my 3rd year of CS.<br>
+                    This page will hold a bit of info on my skills, past and current projects,<br>
+                    and how you can contact me</p></div>
                 <!--                <p class = "hero_desc">Thr</p>-->
             </div>
         </div>
@@ -63,28 +63,27 @@
 </section>
 
 <!--<section id="skills" class = "">-->
-<section id="skills" class="fade-section fade-section-out">
+<section id="skills" class="fade-section fade-section-out pt-4 skills">
     <div class="container pt-5">
         <h1 class="text-center pt-3">Skills</h1>
-        <p class="text-center">In terms of the amount of experience I've had with the language, and how comfortable I am
-            coding with it</p>
+        <p class="text-center">This is a very brief description of languages I have experience in.
+        (the progress is mainly in terms of the amount of experience I've had with the language compared
+        with the others and how comfortable I am coding with it)</p>
         <div class="row">
             <!--            Java-->
             <div class="col-md-6 mt-3">
                 <p>Java</p>
                 <div class="progress">
-                    <div class="progress-bar-striped progress-bar-animated progressBarCol" role="progressbar"
-                         style="width:80%"
-                         aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar-striped progress-bar-animated progressBarCol"
+                         aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                         role="progressbar"></div>
                 </div>
             </div>
-            <!--            JavaScript-->
             <div class="col-md-6 mt-3">
                 <p>JavaScript</p>
                 <div class="progress">
                     <div class="progress-bar-striped progress-bar-animated progressBarCol" role="progressbar"
-                         style="width:65%"
-                         aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                         aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
             <!--            HTML/CSS-->
@@ -92,8 +91,7 @@
                 <p>HTML/CSS</p>
                 <div class="progress">
                     <div class="progress-bar-striped progress-bar-animated progressBarCol" role="progressbar"
-                         style="width:70%"
-                         aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                         aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
             <!--            TypeScript-->
@@ -101,8 +99,7 @@
                 <p>TypeScript</p>
                 <div class="progress">
                     <div class="progress-bar-striped progress-bar-animated progressBarCol" role="progressbar"
-                         style="width:70%"
-                         aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                         aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
             <!--            C/C++-->
@@ -110,8 +107,7 @@
                 <p>C/C++</p>
                 <div class="progress">
                     <div class="progress-bar-striped progress-bar-animated progressBarCol" role="progressbar"
-                         style="width:40%"
-                         aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                         aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
             <!--            SQL-->
@@ -119,8 +115,7 @@
                 <p>SQL</p>
                 <div class="progress">
                     <div class="progress-bar-striped progress-bar-animated progressBarCol" role="progressbar"
-                         style="width:60%"
-                         aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
             <!--            PHP-->
@@ -128,8 +123,7 @@
                 <p>PHP</p>
                 <div class="progress">
                     <div class="progress-bar-striped progress-bar-animated progressBarCol" role="progressbar"
-                         style="width:40%"
-                         aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                         aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
         </div>
@@ -139,15 +133,30 @@
 <section id="projects" class="fade-section fade-section-out">
     <div class="container pt-5 pb-5">
         <h1 class="text-center pt-3">Projects</h1>
+        <p class = "text-center">These are previous and current projects I've worked on</p>
         <div class="row">
 
             <!--insight ubc-->
             <div class="col-md mt-5">
                 <div class="card">
                     <div class="card-body">
-                        <h3 class="card-title">Insight UBC</h3>
-                        <p class="card-text">backend and frontend --- demo for frontend only as it's a course
-                            project that's unable to be publically released</p>
+                        <img class="card-img-top" src="images/catHeader.PNG" style="width:100%">
+                        <h3 class="card-title pt-3">Insight UBC</h3>
+                        <p class="card-text pt-2">
+                            This is a group project completed for a 3rd year CPSC course at UBC, not intended to be released
+                            publically. The link below <span class = "dots">...</span>
+                            is to a demo video created specifically to demonstrate 2 user stories
+                            involving the front end of the project communicating with our backend server.
+                            In brief, our backend reads from a user uploaded dataset containing information on either
+                            course statistics or building/room locations at UBC.
+                            <br><br>
+                            For our frontend, we decided to create a website where users can see a summary of either course statistics
+                            or room statistics correlating to a specific building. (please check out the demo video for a clearer
+                            picture of what our frontend does!)
+<!--                            <br><br>-->
+<!--                            backend and frontend -&#45;&#45; demo for frontend only as it's a course-->
+<!--                            project that's unable to be publically released-->
+                        </p>
                         <div class="row">
                             <div>
                                 <a href="https://youtu.be/dd42775Kg0E" class="btn btn-outline-secondary">UI Demo</a>
@@ -182,6 +191,7 @@
             <div class="col-md mt-5">
                 <div class="card">
                     <div class="card-body">
+                        <img class="card-img-top" src="images/catHeader.PNG" style="width:100%">
                         <h3 class="card-title">SOUUP: A Mental Health Check-In Site</h3>
                         <p class="card-text">testinggg</p>
                         <div class="align-self-lg-end">
@@ -195,6 +205,7 @@
             <div class="col-md mt-5">
                 <div class="card">
                     <div class="card-body">
+                        <img class="card-img-top" src="images/catHeader.PNG" style="width:100%">
                         <h3 class="card-title">Marble Site</h3>
                         <p class="card-text">testinggg</p>
                         <div class="align-self-lg-end">
@@ -210,6 +221,7 @@
             <div class="col-md mt-5">
                 <div class="card">
                     <div class="card-body">
+                        <img class="card-img-top" src="images/catHeader.PNG" style="width:100%">
                         <h3 class="card-title">Text Adventure Game</h3>
                         <p class="card-text">testinggg</p>
                         <div class="align-self-lg-end">
